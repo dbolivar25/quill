@@ -1,0 +1,40 @@
+{
+	"name": "quill-cli",
+	"version": "0.1.0",
+	"description": "AI-powered git commit messages, changelogs, and releases",
+	"type": "module",
+	"bin": {
+		"quill": "./dist/index.js",
+		"ql": "./dist/index.js"
+	},
+	"scripts": {
+		"dev": "bun run src/index.ts",
+		"build": "bun build src/index.ts --outdir dist --target node --format esm",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check .",
+		"format": "biome format --write ."
+	},
+	"dependencies": {
+		"@clack/prompts": "^0.10.0",
+		"@opencode-ai/sdk": "^1.0.186",
+		"commander": "^13.0.0",
+		"picocolors": "^1.1.1",
+		"simple-git": "^3.27.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "latest",
+		"typescript": "^5.7.2"
+	},
+	"keywords": [
+		"git",
+		"commit",
+		"changelog",
+		"release",
+		"ai",
+		"opencode",
+		"cli"
+	],
+	"author": "",
+	"license": "MIT"
+}
