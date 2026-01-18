@@ -82,12 +82,12 @@ export class QuillError extends Error {
 export const DEFAULT_CONFIG: QuillConfig = {
 	models: {
 		commit: {
-			provider: "anthropic",
-			model: "claude-sonnet-4-5",
+			provider: "openai",
+			model: "gpt-5.1-codex-mini",
 		},
 		changelog: {
-			provider: "anthropic",
-			model: "claude-sonnet-4-5",
+			provider: "openai",
+			model: "gpt-5.1-codex-mini",
 		},
 	},
 }
